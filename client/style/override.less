@@ -1,0 +1,302 @@
+// Prefix classname
+@css-prefix             : ant-;
+
+// Color
+@primary-color          : #2196F3;
+@success-color          : #00E676;
+@error-color            : #F44336;
+@warning-color          : #FF6F00;
+
+// ------ Base & Require ------
+@body-background        : #fff;
+
+@font-family            : "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+@code-family            : Consolas,Menlo,Courier,monospace;
+@text-color             : #666;
+@font-size-base         : 12px;
+@line-height-base       : 1.5;
+@line-height-computed   : floor((@font-size-base * @line-height-base));
+@border-radius-base     : 2px;
+
+// ICONFONT
+@iconfont-css-prefix    : anticon;
+@icon-url               : "//at.alicdn.com/t/font_1447745222_4559345";
+
+// LINK
+@link-color             : #03A9F4;
+@link-hover-color       : tint(@link-color, 20%);
+@link-active-color      : shade(@link-color, 5%);
+@link-hover-decoration  : none;
+
+// Disabled cursor for form controls and buttons.
+@cursor-disabled        : not-allowed;
+
+// Animation
+@ease-out            : cubic-bezier(0.215, 0.61, 0.355, 1);
+@ease-in             : cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@ease-in-out         : cubic-bezier(0.645, 0.045, 0.355, 1);
+@ease-out-back       : cubic-bezier(0.18, 0.89, 0.32, 1.28);
+@ease-in-back        : cubic-bezier(0.6, -0.3, 0.74, 0.05);
+@ease-in-out-back    : cubic-bezier(0.68, -0.55, 0.27, 1.55);
+@ease-out-circ       : cubic-bezier(0.08, 0.82, 0.17, 1);
+@ease-in-circ        : cubic-bezier(0.6, 0.04, 0.98, 0.34);
+@ease-in-out-circ    : cubic-bezier(0.78, 0.14, 0.15, 0.86);
+@ease-out-quint      : cubic-bezier(0.23, 1, 0.32, 1);
+@ease-in-quint       : cubic-bezier(0.755, 0.05, 0.855, 0.06);
+@ease-in-out-quint   : cubic-bezier(0.86, 0, 0.07, 1);
+
+// Buttons
+@btn-font-weight        : normal;
+
+@btn-primary-color      : #fff;
+@btn-primary-bg         : @primary-color;
+@btn-group-border       : shade(@primary-color, 5%);
+
+@btn-default-color      : #666;
+@btn-default-bg         : #f4f4f4;
+@btn-default-border     : #d9d9d9;
+
+@btn-ghost-color        : #666;
+@btn-ghost-bg           : #fff;
+@btn-ghost-border       : #d9d9d9;
+
+@btn-disable-color      : #ccc;
+@btn-disable-bg         : #f3f5f7;
+@btn-disable-border     : #d9d9d9;
+
+@btn-padding-base       : 8px 25px;
+@btn-border-radius-base : 2px;
+
+@btn-font-size-lg       : 14px;
+@btn-padding-lg         : 4px 15px 5px 15px;
+@btn-border-radius-lg   : @btn-border-radius-base;
+
+@btn-padding-sm         : 1px 7px;
+@btn-border-radius-sm   : @btn-border-radius-base;
+
+@btn-circle-size        : 28px;
+@btn-circle-size-lg     : 32px;
+@btn-circle-size-sm     : 22px;
+
+// Media queries breakpoints
+// Extra small screen / phone
+@screen-xs              : 480px;
+@screen-xs-min          : @screen-xs;
+@screen-xs-max          : (@screen-xs-min - 1);
+
+// Small screen / tablet
+@screen-sm              : 768px;
+@screen-sm-min          : @screen-sm;
+@screen-sm-max          : (@screen-sm-min - 1);
+
+// Medium screen / desktop
+@screen-md              : 992px;
+@screen-md-min          : @screen-md;
+@screen-md-max          : (@screen-md-min - 1);
+
+// Large screen / wide desktop
+@screen-lg              : 1200px;
+@screen-lg-min          : @screen-lg;
+@screen-lg-max          : (@screen-lg-min - 1);
+
+// Layout and Grid system
+@grid-columns           : 24;
+@grid-gutter-width      : 0;
+
+// Container sizes
+@container-sm           : (720px + @grid-gutter-width);
+@container-md           : (940px + @grid-gutter-width);
+@container-lg           : (1140px + @grid-gutter-width);
+
+// Form
+// --------------------------------
+// Legend
+@legend-color                : #999;
+@legend-border-color         : #d9d9d9;
+// Label
+@label-required-color        : #f60;
+@label-color                 : #666;
+// Input
+@input-height-base: 32px;
+@input-height-lg: 36px;
+@input-height-sm: 28px;
+
+@input-padding-horizontal    : 7px;
+@input-padding-vertical-base : 6px;
+@input-padding-vertical-sm   : 6px;
+@input-padding-vertical-lg   : 6px;
+
+@input-placeholder-color     : #ccc;
+@input-color                 : #666;
+@input-border-color          : #d9d9d9;
+@input-bg                    : #fff;
+
+@input-hover-border-color    : @primary-color;
+@input-focus-border-color    : @primary-color;
+@input-disabled-bg           : #f3f5f7;
+
+@form-item-margin-bottom     : 24px;
+
+@overlay-shadow              : 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+
+// Spin
+// --------------------------------
+@spin-dot-default            : #999;
+
+@spin-dot-size               : 8px;
+@spin-dot-size-sm            : @spin-dot-size / 2;
+@spin-dot-size-lg            : @spin-dot-size * 2;
+
+// custom part
+
+@border-color:  #F5F5F5;
+@border-color-darker: #EEEEEE;
+
+* {
+  outline: none !important;  // make outline die out
+}
+
+.no-shadow {
+  box-shadow: none!important;
+}
+
+.no-border {
+  border-width: 0 !important;
+}
+
+.no-radius {
+  border-radius: 0 !important;
+}
+
+// Calendar
+
+.@{calendar-prefix-cls} {
+  &:extend(.no-border);
+
+  &-date {
+    border-radius: 2px !important;
+  }
+}
+
+// Form
+
+.@{css-prefix}input {
+  &:extend(.no-shadow);
+}
+
+.@{input-number-prefix-cls} {
+  &:extend(.no-shadow);
+}
+
+.has-error {
+
+  .@{css-prefix}input {
+    box-shadow: none !important;
+  }
+}
+
+.@{select-prefix-cls}-dropdown {
+  &:extend(.no-border);
+  &:extend(.no-radius);
+}
+
+.@{select-prefix-cls} .@{select-prefix-cls}-selection {
+  &:extend(.no-shadow); // reset dropdown box-shadow
+}
+
+.@{select-prefix-cls}-selection--multiple .@{select-prefix-cls}-selection__choice {
+  border-radius: 1px !important;
+}
+
+.@{timepicker-prefix-cls}-panel-inner {
+  &:extend(.no-border);
+}
+
+.@{dropdown-prefix-cls}-menu {
+  &:extend(.no-border);
+
+  &-item-divider {
+    background-color: @border-color !important;
+  }
+}
+
+.@{message-prefix-cls}-notice {
+  &-content {
+    &:extend(.no-border);
+    width: 335px;
+    text-align: center;
+    padding: 15px 20px !important;
+    font-size: 14px;
+  }
+
+  .anticon {
+    font-size: 16px !important;
+  }
+}
+
+.@{collapse-prefix-cls} {
+  background-color: @border-color-darker;
+}
+
+.@{dialog-prefix-cls} {
+  &-content {
+    &:extend(.no-radius);
+  }
+
+  &-header {
+    &:extend(.no-radius);
+    border-bottom-color: @border-color !important;
+  }
+
+  &-footer {
+    &:extend(.no-radius);
+    border-top-color: @border-color !important;
+  }
+}
+
+.@{notification-prefix-cls} {
+
+  &-notice {
+    box-shadow: @overlay-shadow !important;
+
+  }
+}
+
+.@{popover-prefix-cls} {
+
+  &-content {
+    display: flex;
+    justify-contetn: center;
+    align-items: center;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+
+    > * {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+
+  &-inner {
+    &:extend(.no-border);
+  }
+}
+
+.@{popover-prefix-cls}-title {
+  border-color: @border-color !important;
+}
+
+.@{tag-prefix-cls} {
+  &:extend(.no-radius);
+  height: 26px !important;
+  line-height: 26px !important;
+}
+
+.@{pagination-prefix-cls} {
+  &-prev,
+  &-next,
+  &-item,
+  input {
+    border-color: @border-color-darker !important;
+  }
+}
