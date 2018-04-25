@@ -56,3 +56,6 @@ override.less是我写的覆盖部分，下方一堆 `!important` 请勿采用�
 antd模块采用了babel-plugin-antd插件编译，
 避免直接`import`时，该项目`lib/index.js`里面直接引用了全部编译好的css，
 会导致打包两份css文件。
+
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/vagusX/react-headstream.svg)](https://greenkeeper.io/)
